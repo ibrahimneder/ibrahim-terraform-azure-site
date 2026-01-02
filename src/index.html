@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ibrahim Neder — Portfolio</title>
+  <meta name="description" content="Portfolio site for Ibrahim Neder: resume, certifications, and projects." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo">IN</span>
+        <a href="#" class="brand-text">Ibrahim Neder</a>
+      </div>
+      <nav id="nav">
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#certs">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>IT • Cloud-In-Progress</h1>
+      <p>Chicago-based IT professional • Microsoft Certified Azure Administrator Associate.</p>
+      <div class="cta">
+        <a class="btn primary" href="assets/pdf/Ibrahim Neder Resume.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
+        <a class="btn" href="#certs">See Certifications</a>
+      </div>
+    </section>
+
+    <section id="about" class="container card">
+      <h2>About me</h2>
+      <p>
+        I’m an IT Support Assistant at the British International School of Chicago – South Loop.
+        I work with Microsoft 365/Entra ID, Intune, and end-user support for a 900+ user environment.
+        I’m building skills in Azure administration, automation, and cloud infrastructure.
+      </p>
+      <ul class="pill-list">
+        <li>Entra ID / Azure AD</li>
+        <li>Intune</li>
+        <li>Windows & Apple device support</li>
+        <li>DNS • DHCP • VPN</li>
+      </ul>
+    </section>
+
+    <section id="resume" class="container">
+      <h2>Resume</h2>
+      <p>Download or view my current resume:</p>
+      <a class="btn primary" href="assets/pdf/Ibrahim Neder Resume.pdf" target="_blank" rel="noopener">Open Resume PDF</a>
+    </section>
+
+    <section id="certs" class="container card">
+      <h2>Certifications</h2>
+      <p>Current certifications (PDFs hosted here):</p>
+      <ul class="link-list">
+        <li><a href="assets/pdf/A+.pdf" target="_blank" rel="noopener">CompTIA A+</a></li>
+        <li><a href="assets/pdf/Cloud+.pdf" target="_blank" rel="noopener">CompTIA Cloud+</a></li>
+        <li><a href="assets/pdf/Server+.pdf" target="_blank" rel="noopener">CompTIA Server+</a></li>
+        <li><a href="assets/pdf/AZ-104.pdf" target="_blank" rel="noopener">Microsoft Certified: Azure Administrator Associate (AZ-104)</a></li>
+      </ul>
+    </section>
+
+   <section id="projects" class="container">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <article class="card">
+      <h3>Azure Resource Provisioning — PowerShell Automation</h3>
+      <p>
+        - Deployed a PowerShell automation script in Azure Cloud Shell that created a governed cloud environment including resource groups, VNETs, NSGs, storage accounts, and virtual machines.<br>
+        - Automated RBAC role assignments and governance tagging for consistent resource compliance.<br>
+        - Demonstrated cloud automation skills to standardize and accelerate environment deployment.<br>
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Azure Infrastructure as Code (Terraform)</h3>
+      <p>
+        - Deployed and managed Azure infrastructure using Terraform, including secure networking, Linux VM provisioning, and SSH key-based access. <br> 
+
+- Designed modular Terraform configurations with separate network and compute layers and reusable input/output contracts. <br>
+
+- Managed Terraform state with Azure Storage backend, including safe migration of existing resources into managed state. <br>
+
+ - Implemented security best practices using NSGs, subnet-level controls, and IP-restricted SSH access. <br>
+
+- Adapted Terraform configurations to enterprise Azure subscription constraints and policy limitations. <br>
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Microsoft Entra ID Project</h3>
+      <p>
+        - Built a cloud IAM environment using Entra ID with lifecycle, SSO, and external identity access.<br>
+        - Created internal users and implemented attribute-based access through groups and roles.<br>
+        - Registered a custom enterprise app with MS Graph API permissions.<br>
+        - Implemented MFA and secure authentication through Entra security defaults.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+
+    <section id="contact" class="container card">
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li><a href="mailto:ibrahim17neder@gmail.com">ibrahim17neder@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/ibrahim-neder-083670188/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Ibrahim Neder • Built with HTML/CSS/JS • Hosted on Azure</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
