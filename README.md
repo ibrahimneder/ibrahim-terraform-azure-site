@@ -170,6 +170,12 @@ Example: `swa-ibrahim-neder-portfolio-prod`
 - ✅ Sensitive outputs marked as sensitive in Terraform
 - ✅ No hardcoded credentials in code
 
+## Remote State Management
+This project uses Azure Blob Storage as a Terraform backend for centralized state management:
+- Storage Account: Stores terraform.tfstate with LRS redundancy
+- State Locking: Prevents concurrent modifications using Azure blob leases
+- Multi-environment support: Enables CI/CD pipelines and team collaboration
+
 ## 📝 Key Learnings
 
 This project demonstrates:
